@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <header class="header">
+             <h1 id="title" class="text-center">2020 DEVELOPER MOST-LOVED SURVEY</h1>
+            <p id="description" class="description text-center">TELL US WHO YOU ARE AND WHAT YOU LOVE THE MOST</p>
+           </header>
+                      
+           <form id="survey-form">
+             <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                class="form-control"       placeholder="Enter your name" 
+               required
+               /> 
+            </div><!--form-group name end-->
+            
+            <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+             <input 
+              type="email" 
+                            name="email" 
+                            id="email" 
+                            class="form-control"                 
+                            placeholder="Enter your Email" 
+                            required
+                           /> 
+                        </div><!--form-group email end-->
+                        
+                        <div class="form-group">
+                          <label id="number-label" for="number">Age</label>
+                          <input
+                            type="number"
+                            name="age"
+                            id="number"
+                            min="5"
+                            max="99"
+                            class="form-control"
+                            placeholder="Age"
+                           />      
+                        </div><!--form group age end-->
+                          
+                 <div class="form-group gender-option">    
+                   <label id="gender-label">Gender</label>
+                 <input 
+                            name="gender"
+                            value="male"
+                            type="radio"
+                            class="input-radio"
+                                 />
+                          Male
+                
+            
+                   <input 
+                            name="gender"
+                            value="female"
+                            type="radio"
+                            class="input-radio"
+                                  />
+                          Female
+                    
+                   <input 
+                            name="gender"
+                            value="female"
+                            type="radio"
+                            class="input-radio"
+                                  />
+                      Neutral
+                 </div><!--form group gender end--> 
+                        
+                        <div class="form-group">
+                          <p>Education</p>
+                          <select id="dropdown" name="eduction" class="form-control" required>
+                          <option disable seleted value>Select educational attainment</option>
+                          <option value="doc-degree">Doctoral degree</option>
+                          <option value="pro-degree">Professional degree</option>
+                          <option value="master-degree">Master’s degree</option>
+                          <option value="bachelor-degree">Bachelor’s degree</option>
+                          <option value="associate-degree">Associate degree</option>
+                          <option value="uni-nodegree">Some college/university study without earning a degree</option>
+                          <option value="sec-school">Secondary school</option>    
+                          <option value="pri-school">Primary/elementary school</option>
+                          <option value="no-eduction">I never completed any formal education</option>
+                          </select>  
+                        </div><!--form group eduction end-->
+                        
+                        <div class="form-group">
+                          <p>Current Role</p>
+                          <select id="dropdown" name="role" class="form-control" required>
+                            <option disable seleted value>Select current role</option>
+                            <option value="dev-fullstack">Developer, full-stack</option>
+                            <option value="dev-backend">Developer, back-end</option>
+                            <option value="dev-frontend">Developer, front-end</option>
+                            <option value="dev-desktop">Developer, desktop or enterprise applications</option>
+                            <option value="dev-mobile">Developer, mobile</option>
+                            <option value="dev-qa">Developer, QA or test</option>    
+                            <option value="database-admin">Database administrator</option>
+                            <option value="machine-learning">Data scientist or machine learning specialist</option> 
+                            <option value="devOps">DevOps specialist</option> 
+                            <option value="designer">Designer</option>
+                            <option value="student">Student</option>
+                            <option value="other">Other</option>
+                          </select>  
+                        </div><!--form group role end-->
+          
+                        <div class="form-group">
+                            <p>Primary Operating System</p>               
+                            <select id="dropdown" name="os" class="form-control" required>
+                              <option disable seleted value>Select operating system</option>
+                                <option value="os-macos">MacOS</option>
+                                <option value="os-windows">Windows</option>
+                                <option value="os-linux">Linux-based</option>
+                                <option value="os-bsd">BSD</option>
+                            </select>                  
+                        </div><!--form group os end-->
+                        
+                        <div class="form-group">
+                          <p>Most Loved Languages</p>
+                          <div class="grid">
+                            <label>
+                              <input
+                                name="most-loved-language"
+                                value="rust"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Rust
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-language"
+                                value="typescript"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />TypeScript
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-language"
+                                value="python"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Python
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-language"
+                                value="kotlin"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Kotlin
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-language"
+                                value="go"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Go
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-language"
+                                value="julia"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Julia
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-language"
+                                value="dart"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Dart
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-language"
+                                value="c#"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />C#
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-language"
+                                value="swift"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Swift
+                            </label>
+                          <label>
+                            <input
+                              name="most-loved-language"
+                              value="javascript"
+                              type="checkbox"
+                              class="input-checkbox"
+                            />JavaScript
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-language"
+                                value="sql"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />SQL
+                            </label>                
+                          <label>
+                            <input
+                              name="most-loved-language"
+                              value="htmlcss"
+                              type="checkbox"
+                              class="input-checkbox"
+                            />HTML/CSS
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-language"
+                                value="scala"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Scala
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-language"
+                                value="haskell"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Haskell
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-language"
+                                value="r"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />R
+                            </label>       
+                          <label>
+                            <input
+                              name="most-loved-language"
+                              value="java"
+                              type="checkbox"
+                              class="input-checkbox"
+                            />Java
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-language"
+                                value="c++"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />C++
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-language"
+                                value="ruby"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Ruby
+                            </label>
+                            <label>
+                            <input
+                              name="most-loved-language"
+                              value="php"
+                              type="checkbox"
+                              class="input-checkbox"
+                            />PHP
+                          </label>                
+                          <label>
+                            <input
+                              name="most-loved-language"
+                              value="c"
+                              type="checkbox"
+                              class="input-checkbox"
+                            />C
+                          </label>    
+                              <label>
+                            <input
+                              name="most-loved-language"
+                              value="assembly"
+                              type="checkbox"
+                              class="input-checkbox"
+                            />Assembly
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-language"
+                                value="perl"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Perl
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-language"
+                                value="object-c"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Object-C
+                          </label>
+                          <label>
+                            <input
+                              name="most-loved-language"
+                              value="vba"
+                              type="checkbox"
+                              class="input-checkbox"
+                            />VBA
+                          </label>   
+                          </div>
+                        </div><!--form group most-loved-language end-->
+                        
+                        <div class="form-group">
+                          <p>Most Loved Frameworks, Libraries, and Tools</p>
+                          <div class="grid">
+                          <label>
+                              <input
+                                name="most-loved-framework"
+                                value="aspnetcore"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />ASP.NET Core
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="reactjs"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />React.js
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="vuejs"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Vue.js
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="express"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Express
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="gatsby"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Gatsby
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="spring"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Spring
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="django"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Django
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="flask"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Flask
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="angular"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Angular
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="laravel"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Laravel
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="rubyonrails"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Ruby on Rails
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="symfony"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Symfony
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="aspnet"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />ASP.NET
+                            </label>
+                          <label>
+                            <input
+                              name="most-loved-framework"
+                              value="jquery"
+                              type="checkbox"
+                              class="input-checkbox"
+                            />jQuery
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-framework"
+                                value="drupal"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Drupal
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="angularjs"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Angular.js
+                            </label>                             
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="netcore"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />.NET Core
+                            </label>
+                          <label>
+                              <input
+                                name="most-loved-framework"
+                                value="torch"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Torch/PyTorch
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-framework"
+                                value="flutter"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Flutter
+                            </label>
+                            <label>
+                                <input
+                                    name="most-loved-framework"
+                                    value="nodejs"
+                                    type="checkbox"
+                                    class="input-checkbox"
+                                  />Node.js
+                                </label>
+                               <label>
+                                <input
+                                name="most-loved-framework"
+                                value="react-native"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />React Native
+                            </label>                     
+                          </div>
+                        </div><!--form group most-loved-framework end-->
+          
+                        <div class="form-group">
+                          <p>Most Loved Databases</p>
+                          <div class="grid">
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="redis"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Redis
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="postgresql"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />PostgreSQL
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="elasticsearch"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Elasticsearch
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="mongodb"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />MongoDB
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="firebase"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Firebase
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="mariadb"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />MariaDB
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="ms-sql-server"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />MS SQL Server
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="dynamodb"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />DynamoDB
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="sqlite"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />SQLite
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="mysql"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />MySQL
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="cassandra"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Cassandra
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="couchbase"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Couchbase
+                          </label>              
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="oracle"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Oracle
+                          </label>                                              
+                          <label>
+                              <input
+                                name="most-loved-database"
+                                value="ibm-db2"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />IBM DB2
+                          </label>            
+                          </div>
+                        </div><!--form group most-loved-database end-->
+          
+                        <div class="form-group">
+                          <p>Most Loved Platforms</p>
+                          <div class="platform-grid">
+                          <label>
+                            <input
+                              name="most-loved-platform"
+                              value="platform-linux"
+                              type="checkbox"
+                              class="input-checkbox"
+                            />Linux
+                          </label>
+                          <label>
+                              <input
+                                name="most-loved-platform"
+                                value="docker"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Docker
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="kubernetes"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Kubernetes
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="aws"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />AWS
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="raspberry-pi"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Raspberry Pi
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="platform-macos"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />MacOS
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="ms-azure"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Microsoft Azure
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="ios"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />iOS
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="google-cloud-platform"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Google Cloud Platform
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="platform-windows"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Windows
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="android"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Android
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="arduino"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Arduino
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="slack-apps"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Slack Apps and Integrations
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="heroku"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Heroku
+                            </label>
+                            <label>
+                              <input
+                                name="most-loved-platform"
+                                value="ibm-cloud"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />IBM Cloud or Watson
+                            </label>
+                            
+                          </div>
+                      </div><!--form group most-loved-platform end-->
+          
+                      <div class="form-group">
+                          <p>Let us know if your most-loved technologies are not listed above or secretly send us your most-hated ones.</p>
+                      <textarea
+                          id="comments"
+                          class="input-textarea"
+                          name="comment"
+                          placeholder="Enter your comment here..."
+                      ></textarea>
+                      </div><!--form group comment end-->
+          
+                      <div class="form-group">
+                          <button type="submit" id="submit" class="submit-button">Submit</button>
+                      </div><!--form group submit end-->
+          
+                      </form>
+                    </div> <!--container end-->
+                  
+    </body>  
+</html>
