@@ -1,7 +1,7 @@
 # 2020 DEVELOPER MOST-LOVED SURVEY
 FreeCodeCamp Responsive Web Design Project
 
-![2020 DEVELOPER MOST-LOVED SURVEY](https://github.com/karen-developer/most-loved-survey/blob/master/most-loved-survey.png)
+![2020 DEVELOPER MOST-LOVED SURVEY](https://github.com/karen-developer/most-loved-survey/blob/master/most-loved-survey.jpg?raw=true)
 
 User Story #1: I can see a title with id="title" in H1 sized text.
 
